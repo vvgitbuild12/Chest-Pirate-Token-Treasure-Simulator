@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Treasure Hunters — Chest Simulator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="brand">TREASURE<span>HUNTERS</span></div>
+  <div class="season-tag">FORTNITE · MINI-SEASON</div>
+</header>
+
+<main>
+  <section class="simulator">
+    <div class="topline">
+      <span>THE TREASURE VAULT</span>
+      <span class="week">WEEK 04</span>
+    </div>
+
+    <h1>OPEN THE CHEST</h1>
+    <p class="subtitle">Seven treasures. One chest. Endless possibilities.</p>
+
+    <div class="chest-area">
+      <div class="chest-light"></div>
+      <div class="chest" id="chest">
+        <div class="chest-lid">
+          <div class="lid-band"></div>
+        </div>
+        <div class="chest-base">
+          <div class="base-band"></div>
+          <div class="chest-lock"></div>
+        </div>
+      </div>
+      <div class="chest-shadow"></div>
+    </div>
+
+    <div class="status" id="status">READY TO OPEN</div>
+
+    <div class="open-controls">
+      <button class="open-one" id="one">OPEN 1 CHEST</button>
+      <div class="batch-buttons">
+        <button id="hundred">OPEN 100</button>
+        <button id="thousand">OPEN 1,000</button>
+        <button id="reset" class="reset-button">RESET</button>
+      </div>
+
+      <div class="until">
+        <div class="control-label">SEARCH FOR A SPECIFIC TREASURE</div>
+        <select id="target"></select>
+        <button id="untilButton">OPEN UNTIL FOUND</button>
+      </div>
+    </div>
+
+    <div class="stats">
+      <div class="stat">
+        <span>CHESTS OPENED</span>
+        <strong id="chestsOpened">0</strong>
+      </div>
+      <div class="stat">
+        <span>TREASURES FOUND</span>
+        <strong id="treasuresFound">0</strong>
+      </div>
+    </div>
+
+    <div class="results-heading">
+      <span>YOUR TREASURE</span>
+      <span id="resultLabel">NO FINDS YET</span>
+    </div>
+    <div class="results" id="results">
+      <div class="empty">Your treasure discoveries will appear here.</div>
+    </div>
+  </section>
+
+  <aside class="odds">
+    <div class="odds-top">
+      <div>
+        <div class="small-label">THE TREASURE POOL</div>
+        <h2>DROP ODDS</h2>
+      </div>
+      <span class="live-dot"></span>
+    </div>
+
+    <div id="oddsList"></div>
+
+    <div class="odds-footer">
+      <span>OFFICIAL NORMAL-MATCH ODDS</span>
+      <p>Each chest rolls separately for every treasure. More than one treasure can appear from a single chest.</p>
+    </div>
+  </aside>
+</main>
+
+<footer>
+  FAN-MADE SIMULATOR · NOT AFFILIATED WITH EPIC GAMES
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
